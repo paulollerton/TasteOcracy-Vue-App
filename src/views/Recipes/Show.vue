@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
-    <h1>All Recipes</h1>
+  <div class="recipes-show">
+    <!-- <h1>{{ message }}</h1> -->
     <div v-for="recipe in recipes">
       <h2>{{ recipe.title }}</h2>
       <img v-bind:src="recipe.image_url">
       <p>Category: {{ recipe.category }}</p>
-      <button v-on:click="showRecipe(recipe)">Full Recipe</button>
+      <!-- <button v-on:click="showRecipe(recipe)">Full Recipe</button> -->
       <div v-if="currentRecipe === recipe">
         <p>Created By: {{ recipe.user_id }}</p>
         <p>{{ recipe.blurb }}</p>
@@ -24,8 +24,9 @@ import axios from "axios";
 export default {
   data: function() {
     return {
+      // message: {{ recipe.title }},
       currentRecipe: {},
-      recipes: []
+      // recipes: []
     };
   },
   created: function() {
@@ -37,7 +38,7 @@ export default {
   methods: {
     showRecipe: function(recipe) {
       if (this.currentRecipe === recipe) {
-        this.currentRecipe = null;
+        this.currentRecipe = {};
       } else {
         this.currentRecipe = recipe;
       }
