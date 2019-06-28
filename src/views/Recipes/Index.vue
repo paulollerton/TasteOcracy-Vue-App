@@ -3,16 +3,12 @@
     <h1>All Recipes</h1>
     <div v-for="recipe in recipes">
       <h2>{{ recipe.title }}</h2>
-      <img v-bind:src="recipe.image_url">
+      <router-link v-bind:to="'/recipes/' + recipe.id">
+        <img v-bind:src="recipe.image_url">
+      </router-link>
       <p>Category: {{ recipe.category }}</p>
       <button v-on:click="showRecipe(recipe)">Full Recipe</button>
       <div v-if="currentRecipe === recipe">
-        <p>Created By: {{ recipe.user_id }}</p>
-        <p>{{ recipe.blurb }}</p>
-        <p>Prep Time: {{ recipe.prep_time}}</p>
-        <p>Cook Time: {{ recipe.cook_time}}</p>
-        <ul>Ingredients: {{ recipe.ingredients }}</ul>
-        <ol>Directions: {{ recipe.directions }}</ol>
       </div>
     </div>
   </div>
