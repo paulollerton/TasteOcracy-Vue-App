@@ -7,7 +7,9 @@
         <img v-bind:src="recipe.image_url">
       </router-link>
       <p>Category: {{ recipe.category }}</p>
-      <button v-on:click="showRecipe(recipe)">Full Recipe</button>
+      <router-link v-bind:to="'/recipes/' + recipe.id">
+        <button v-on:click="showRecipe(recipe)">Full Recipe</button>
+      </router-link>
       <div v-if="currentRecipe === recipe">
       </div>
     </div>
