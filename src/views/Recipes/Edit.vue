@@ -1,7 +1,7 @@
 <template>
-  <div class="recipes-new">
+  <div class="recipes-edit">
     
-    <h1>New Recipe</h1>
+    <h1 class="text-center">Edit Recipe</h1> 
 
     <ul>
       <li v-for="error in errors">{{ error }}</li>
@@ -32,18 +32,22 @@
       </div>
       <div class="form-group">
         <label for="cook-time">Cook Time</label>
-        <input type="number" class="form-control" id="cook-time" placeholder="Lord Voldemort" v-model="newRecipeCookTIme">
+        <input type="number" class="form-control" id="cook-time" placeholder="2" v-model="newRecipeCookTIme">
       </div>
       <div class="form-group">
         <label for="ingredients">Ingredients</label>
-        <input type="text" class="form-control" id="ingredients" placeholder="Tea, Hot Water" v-model="newRecipeIngredients">
+        <input type="text" class="form-control" id="ingredients" placeholder="Tea leaves, Water" v-model="newRecipeIngredients">
       </div>
       <div class="form-group">
         <label for="directions">Directions</label>
-        <input type="text" class="form-control" id="directions" placeholder="Steep tea in hot water, drink." v-model="newRecipeDirections">
+        <input type="text" class="form-control" id="directions" placeholder="Steep tea leaves in water." v-model="newRecipeDirections">
       </div>
-      <button type="submit" class="btn btn-primary btn-outline">Submit</button>
+      <button type="submit" class="btn btn-primary btn-outline">Update</button>
     </form>
+
+    <div class="text-center">
+      <button class="btn btn-danger" v-on:click="destroyRecipe()">Destroy</button> 
+    </div>
 
   </div>
 </template>
@@ -53,22 +57,19 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      newRecipeTitle: "",
-      newRecipeImageUrl: "",
-      newRecipeCategory: "",
-      newRecipeBlurb: "",
-      newRecipePrepTime: "",
-      newRecipeCookTIme: "",
-      newRecipeIngredients: "",
-      newRecipeDirections: "",
-      errors: []
+      errors: [],
+      recipe: {}
     };
   },
   created: function() {
+    axios.get("/api/recipes/" + this.$route.params.id).then(response => {
+      this.recipe = response.data;
+      console.log(this.recipe);
+    });
   },
   methods: {
     submit: function() {
-      // make a post request via axios to create a new recipe in our database!
+      // send a patch request to the backend to update this recipe!
       var params = {
         title: this.newRecipeTitle,
         image_url: this.newRecipeImageUrl,
@@ -79,10 +80,18 @@ export default {
         ingredients: this.newRecipeIngredients,
         directions: this.newRecipeDirections
       };
-      axios.post("/api/recipes", params).then(response => {
-        this.$router.push("/");
+      axios.patch("/api/recipes/" + this.recipe.id, params).then(response => {
+        console.log("Success!", response.data);
+        this.$router.push("/recipes/" + this.recipe.id);
       }).catch(error => {
         this.errors = error.response.data.errors;
+      });
+    },
+    destroyRecipe: function() {
+      // send an axios delete request to the backend to remove recipe from database
+      axios.delete("/api/recipes/" + this.recipe.id).then(response => {
+        console.log("Success!", response.data);
+        this.$router.push("/");
       });
     }
   }
