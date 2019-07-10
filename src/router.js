@@ -4,6 +4,8 @@ import Home from './views/Home.vue';
 import Signup from './views/Users/Signup.vue';
 import Login from './views/Users/Login.vue';
 import Logout from './views/Users/Logout.vue';
+import UsersShow from './views/Users/Show.vue';
+import UsersEdit from './views/Users/Edit.vue';
 import RecipesIndex from './views/Recipes/Index.vue';
 import RecipesShow from './views/Recipes/Show.vue';
 import RecipesNew from './views/Recipes/New.vue';
@@ -44,6 +46,16 @@ export default new Router({
       component: Logout
     },
     {
+      path: '/users/:id',
+      name: 'users-show',
+      component: UsersShow
+    },
+    {
+      path: '/users/:id/edit',
+      name: 'users-edit',
+      component: UsersEdit
+    },
+    {
       path: '/recipes/new',
       name: 'recipes-new',
       component: RecipesNew
@@ -54,7 +66,7 @@ export default new Router({
       component: RecipesShow
     },
     {
-      path: '/recipes/edit/:id',
+      path: '/recipes/:id/edit',
       name: 'recipes-edit',
       component: RecipesEdit
     }
