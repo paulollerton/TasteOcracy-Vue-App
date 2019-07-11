@@ -1,5 +1,16 @@
 <template>
   <div class="home">
+
+    <!-- <p><a v-bind:to="'/users' + user.id"><img v-bind:src="current_user.image_url"></a></p> -->
+
+    <button class="btn btn-warning">
+      <router-link v-bind:to="'/signup'">Create Account</router-link>
+    </button>
+
+    <button class="btn btn-warning">
+      <router-link v-bind:to="'/login'">Login</router-link>
+    </button>
+
     <h1>All Recipes</h1>
     <div v-for="recipe in recipes">
       <h2>{{ recipe.title }}</h2>
