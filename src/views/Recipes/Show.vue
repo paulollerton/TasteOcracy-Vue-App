@@ -10,6 +10,10 @@
       <p>Cook Time: {{ recipe.cook_time}}</p>
       <ul>Ingredients: {{ recipe.ingredients }}</ul>
       <ol>Directions: {{ recipe.directions }}</ol>
+
+      <button class="btn btn-warning">
+      <router-link v-bind:to="'/recipes/' + recipe.id + '/edit'">Edit</router-link>
+    </button>
       
     </div>
 </template>

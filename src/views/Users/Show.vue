@@ -6,6 +6,10 @@
     <p>Bio: {{ user.bio }}</p>
     <p>Email: {{ user.email }}</p>
 
+    <button class="btn btn-warning">
+      <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit</router-link>
+    </button>
+
   </div>
 </template>
 
