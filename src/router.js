@@ -10,6 +10,7 @@ import RecipesIndex from './views/Recipes/Index.vue';
 import RecipesShow from './views/Recipes/Show.vue';
 import RecipesNew from './views/Recipes/New.vue';
 import RecipesEdit from './views/Recipes/Edit.vue';
+import SuggestionsNew from './views/Suggestions/New.vue';
 
 Vue.use(Router);
 
@@ -69,6 +70,11 @@ export default new Router({
       path: '/recipes/:id/edit',
       name: 'recipes-edit',
       component: RecipesEdit
+    },
+    {
+      path: '/suggestions/new',
+      name: 'suggestions-new',
+      component: SuggestionsNew
     }
   ]
 });

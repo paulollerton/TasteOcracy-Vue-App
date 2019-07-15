@@ -32,7 +32,7 @@
       </div>
       <div class="form-group">
         <label for="cook-time">Cook Time</label>
-        <input type="number" class="form-control" id="cook-time" placeholder="Lord Voldemort" v-model="newRecipeCookTIme">
+        <input type="number" class="form-control" id="cook-time" placeholder="0" v-model="newRecipeCookTIme">
       </div>
       <div class="form-group">
         <label for="ingredients">Ingredients</label>
