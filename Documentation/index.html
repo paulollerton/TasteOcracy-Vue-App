@@ -1,0 +1,1350 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Xblog - Documentation</title>
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <!-- Plagins CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<div class="page-wrap">
+		<div class="main-menu">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<img src="img/logo.png" width="120" height="66" alt="Logo">
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#first-steps" class="active">First Steps</a></li>
+						<li><a href="#header">Header</a></li>
+						<li><a href="#menu">Navigation</a></li>
+						<li><a href="#slider">Slider</a></li>
+						<li><a href="#page-title">Page Title</a></li>
+						<li><a href="#main-content">Main Content</a></li>
+            <li><a href="#sidebar">Sidebar</a></li>
+            <li><a href="#footer">Footer</a></li>
+						<li><a href="#retina">Retina</a></li>
+						<li><a href="#sass">Sass Files</a></li>
+						<li><a href="#css">Css Files</a></li>
+						<li><a href="#js">JS Files</a></li>
+						<li><a href="#fonts">Fonts</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+		<div class="content-wrap">
+			<div class="container-fluid">
+				<section id="first-steps" class="section">
+					<h2 class="section-title">First Steps</h2>
+					<p><strong><span class="accent-color">X</span>blog</strong> is Multipurpose Blogging Template.</p>
+					<p>3 Simple Steps to start working</p>
+					<ol>
+						<li>Unzip the HTML folder</li>
+						<li>Change content for yourself</li>
+						<li>Upload it to your server</li>
+					</ol>
+				</section><!-- .section -->
+				
+				<section id="header" class="section">
+					<h2 class="section-title">Header</h2>
+					<p>Header can have several design variants:</p>
+					<h4>Standard Header</h4>
+					<div class="code-box">
+						<img src="img/img-1.jpg" alt="">
+						<pre>
+&lt;header class=&quot;site-header&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col col-xs-6 col-sm-3&quot;&gt;
+				Logo
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col col-xs-6 col-sm-9 right-align&quot;&gt;
+				Menu
+
+				Social icons &amp; Search
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</pre>
+					</div>
+
+					<h4>Fixed Header</h4>
+					<div class="code-box">
+						<img src="img/img-1.jpg" alt="">
+						<pre>
+&lt;body class=&quot;<kbd>fixed-header</kbd>&quot;&gt;
+	&lt;header class=&quot;site-header&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col col-xs-6 col-sm-3&quot;&gt;
+					Logo
+				&lt;/div&gt;
+
+				&lt;div class=&quot;col col-xs-6 col-sm-9 right-align&quot;&gt;
+					Menu
+
+					Social icons &amp; Search
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
+&lt;/body&gt;</pre>
+					</div>
+
+					<h4>Fixed Header with Dynamic Height</h4>
+					<div class="code-box">
+						<img src="img/img-1-1.jpg" alt="">
+						<pre>
+&lt;body class=&quot;<kbd>dynamic-header</kbd>&quot;&gt;
+	&lt;header class=&quot;site-header&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col col-xs-6 col-sm-3&quot;&gt;
+					Logo
+				&lt;/div&gt;
+
+				&lt;div class=&quot;col col-xs-6 col-sm-9 right-align&quot;&gt;
+					Menu
+
+					Social icons &amp; Search
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
+&lt;/body&gt;</pre>
+					</div>
+
+					<h4>Divided Header</h4>
+					<div class="code-box">
+						<img src="img/img-1-2.jpg" alt="">
+						<pre>
+&lt;body class=&quot;<kbd>divided-header</kbd>&quot;&gt;
+	&lt;header class=&quot;site-header&quot;&gt;
+		&lt;div class=&quot;container-fluid&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col col-xs-10 col-sm-4 col-md-2&quot;&gt;
+					Logo
+				&lt;/div&gt;
+
+				&lt;div class=&quot;col col-xs-1 col-sm-4 col-md-8 menu-col center-align&quot;&gt;
+					Menu
+				&lt;/div&gt;
+
+				&lt;div class=&quot;col col-xs-1 col-sm-4 col-md-2 right-align&quot;&gt;
+					Social icons &amp;amp; Search
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
+&lt;/body&gt;</pre>
+					</div>
+
+					<h4>Full with Header</h4>
+					<div class="code-box">
+						<img src="img/img-1-3.jpg" alt="">
+						<pre>
+&lt;header class=&quot;site-header&quot;&gt;
+	&lt;div class=&quot;<kbd>fluid-container</kbd>&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col col-xs-6 col-sm-3&quot;&gt;
+				Logo
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col col-xs-6 col-sm-9 right-align&quot;&gt;
+				Menu
+
+				Social icons &amp; Search
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/header&gt;</pre>
+					</div>
+
+					<h4>Transparent Header</h4>
+					<div class="code-box">
+						<img src="img/img-1-4.jpg" alt="">
+						<pre>
+&lt;body class=&quot;<kbd>transparent-header full-screen-slider</kbd>&quot;&gt;
+	&lt;header class=&quot;site-header&quot;&gt;
+		&lt;div class=&quot;fluid-container&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col col-xs-6 col-sm-3&quot;&gt;
+					Logo
+				&lt;/div&gt;
+
+				&lt;div class=&quot;col col-xs-6 col-sm-9 right-align&quot;&gt;
+					Menu
+
+					Social icons &amp; Search
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
+&lt;/body&gt;</pre>
+					</div>
+
+					<p><em>Header include 4 elements - Logo, Navigation, Social Icons and Search.</em></p>
+					<br>
+
+					<h3>Logo</h3>
+					<p>For Logo you can use <code>.jpg</code>, <code>.png</code>, <code>.gif</code> or <code>.svg</code>.</p>
+					<div class="code-box">
+						<img src="img/img-23.jpg" alt="">
+						<pre>
+&lt;a href=&quot;index.html&quot; class=&quot;logo&quot;&gt;
+	&lt;img src=&quot;img/logo.svg&quot; width=&quot;120&quot; height=&quot;66&quot; alt=&quot;Logo&quot;&gt;
+&lt;/a&gt;</pre>
+					</div>
+          
+          <h3>Social icons</h3>
+          <div class="code-box">
+						<pre>
+&lt;div class=&quot;action-box&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;header-btn&quot;&gt;
+		Icon
+	&lt;/a&gt;
+	&lt;div class=&quot;action-content&quot;&gt;
+		&lt;div class=&quot;action-content-wrap&quot;&gt;
+			&lt;div class=&quot;header-social&quot;&gt;
+				&lt;div class=&quot;icons-list&quot;&gt;
+					&lt;span class=&quot;icon&quot;&gt;
+						Icon
+					&lt;/span&gt;
+					&lt;ul class=&quot;social&quot;&gt;
+						&lt;li&gt;Social Item&lt;/li&gt;
+						...
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;a class=&quot;btn close&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+					</div>
+
+					<h3>Search</h3>
+					<div class="code-box">
+						<pre>
+&lt;div class=&quot;action-box&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;header-btn&quot;&gt;
+		Icon
+	&lt;/a&gt;
+	&lt;div class=&quot;action-content&quot;&gt;
+		&lt;div class=&quot;action-content-wrap&quot;&gt;
+			&lt;form class=&quot;header-search&quot;&gt;
+				&lt;div class=&quot;input-field&quot;&gt;
+					&lt;span class=&quot;icon&quot;&gt;
+						Icon
+					&lt;/span&gt;
+					&lt;input class=&quot;search-input&quot; type=&quot;search&quot; name=&quot;search&quot; placeholder=&quot;Search ...&quot;&gt;
+				&lt;/div&gt;
+				&lt;a class=&quot;btn close&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+			&lt;/form&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+					</div>
+				</section><!-- .section -->
+
+				<section id="menu" class="section" style="border-top: 0; padding-top: 0;">
+					<h3>Navigation</h3>
+					<p>Menu Item can include children items, for this you must add class <code>menu-item-has-children</code> for <code>li</code>.</p>
+					<div class="code-box">
+						<img src="img/img-2.jpg" alt="">
+						<pre>
+&lt;div class=&quot;menu main-menu&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;menu-btn&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+
+	&lt;nav class=&quot;menu-list-wrap&quot;&gt;
+		&lt;ul class=&quot;menu-list&quot;&gt;
+			&lt;li class=&quot;menu-item menu-item-has-children&quot;&gt;
+				&lt;a href=&quot;index.html&quot;&gt;Parent Item&lt;/a&gt;
+				&lt;div class=&quot;sub-menu-wrap&quot;&gt;
+					&lt;ul class=&quot;sub-menu&quot;&gt;
+						&lt;li class=&quot;menu-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sub item&lt;/a&gt;&lt;/li&gt;
+						...
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li class=&quot;menu-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Simple Item&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+&lt;/div&gt;</pre>
+					</div>
+
+					<p>Menu can be minimized view, for this you must add class <code>minimized-menu</code> for <code>.menu</code>.</p>
+					<div class="code-box">
+						<img src="img/img-3.jpg" alt="">
+					</div>
+					<div class="code-box">
+						<img src="img/img-3-1.jpg" alt="">
+						<pre>
+&lt;div class=&quot;menu main-menu minimized-menu&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;menu-btn&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+
+	&lt;nav class=&quot;menu-list-wrap&quot;&gt;
+		...
+	&lt;/nav&gt;
+&lt;/div&gt;</pre>
+					</div>
+				</section><!-- .section -->
+
+				<section id="slider" class="section">
+					<h2 class="section-title">Slider</h2>
+					<p>Slider can have 3 design variants:</p>
+
+					<h3>Standard Slider</h3>
+					<div class="code-box">
+						<img src="img/img-6.jpg" alt="">
+						<pre>
+&lt;div class=&quot;slider&quot; data-dots=&quot;true&quot;&gt;
+	&lt;div class=&quot;slides owl-carousel&quot;&gt;
+		&lt;div class=&quot;slider-item&quot;&gt;
+			&lt;img src=&quot;content/img/slide-1.jpg&quot; width=&quot;1098&quot; height=&quot;574&quot; alt=&quot;Slide&quot;&gt;
+			&lt;div class=&quot;caption-wrap&quot;&gt;
+				&lt;div class=&quot;caption text-xs-center&quot;&gt;
+					&lt;h2 class=&quot;title&quot;&gt;&lt;a href=&quot;#&quot;&gt;Title&lt;/a&gt;&lt;/h2&gt;
+					&lt;h3 class=&quot;subtitle&quot;&gt;Subtitle&lt;/h3&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-default&quot;&gt;Read more&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		...
+	&lt;/div&gt;
+
+	&lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+					</div>
+
+					<h3>Slider Overlay</h3>
+					<div class="code-box">
+						<img src="img/img-7.jpg" alt="">
+						<pre>
+&lt;div class=&quot;slider slider-overlay&quot; data-nav=&quot;true&quot; data-dots=&quot;true&quot;&gt;
+	&lt;div class=&quot;slides owl-carousel&quot;&gt;
+		&lt;div class=&quot;slider-item&quot;&gt;
+			&lt;img src=&quot;content/img/slide-1.jpg&quot; width=&quot;1098&quot; height=&quot;574&quot; alt=&quot;Slide&quot;&gt;
+			&lt;div class=&quot;caption-wrap&quot;&gt;
+				&lt;div class=&quot;caption text-xs-center&quot;&gt;
+					&lt;h2 class=&quot;title&quot;&gt;&lt;a href=&quot;#&quot;&gt;Title&lt;/a&gt;&lt;/h2&gt;
+					&lt;h3 class=&quot;subtitle&quot;&gt;Subtitle&lt;/h3&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-default&quot;&gt;Read more&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		...
+	&lt;/div&gt;
+
+	&lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+					</div>
+
+					<h3>Fullscreen Slider</h3>
+					<div class="code-box">
+						<img src="img/img-8.jpg" alt="">
+						<pre>
+&lt;body class=&quot;transparent-header full-screen-slider&quot;&gt;
+	&lt;div class=&quot;slider slider-full-screen&quot; data-dots=&quot;true&quot;&gt;
+		&lt;div class=&quot;slides owl-carousel&quot;&gt;
+			&lt;div class=&quot;slider-item&quot;&gt;
+				&lt;img src=&quot;content/img/slide-1.jpg&quot; width=&quot;1098&quot; height=&quot;574&quot; alt=&quot;Slide&quot;&gt;
+				&lt;div class=&quot;caption-wrap&quot;&gt;
+					&lt;div class=&quot;caption text-xs-center&quot;&gt;
+						&lt;h2 class=&quot;title&quot;&gt;&lt;a href=&quot;#&quot;&gt;Title&lt;/a&gt;&lt;/h2&gt;
+						&lt;h3 class=&quot;subtitle&quot;&gt;Subtitle&lt;/h3&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-default&quot;&gt;Read more&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			...
+		&lt;/div&gt;
+
+		&lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;</pre>
+					</div>
+				</section><!-- .section -->
+
+				<section id="page-title" class="section">
+					<h2 class="section-title">Page Title</h2>
+					<p>Page Title can have 2 design variants:</p>
+					<h3>Standard Page Title</h3>
+					<div class="code-box">
+						<img src="img/img-4.jpg" alt="">
+						<pre>
+&lt;header class=&quot;page-header&quot;&gt;
+	&lt;h1&gt;Standard Page Header&lt;/h1&gt;
+&lt;/header&gt;</pre>
+					</div>
+					<h3>Page Title with background</h3>
+					<div class="code-box">
+						<img src="img/img-5.jpg" alt="">
+						<pre>
+&lt;header class=&quot;page-header bg-page-header&quot; style=&quot;background-image: url(content/img/page-header.jpg);&quot;&gt;
+	&lt;h1&gt;Background Page Header&lt;/h1&gt;
+&lt;/header&gt;</pre>
+					</div>
+				</section><!-- .section -->
+				
+				<section id="main-content" class="section">
+					<h2 class="section-title">Main Content</h2>
+          <p>The Main Content can have a Sidebar (left or right) or be without it.</p>
+          <p><i>Without sidebar</i></p>
+          <div class="code-box">
+						<pre>
+&lt;div id=&quot;main&quot;&gt;
+	&lt;header class=&quot;page-header&quot;&gt;
+		&lt;h1&gt;Title&lt;/h1&gt;
+	&lt;/header&gt;
+
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-12&quot;&gt;
+				Content
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+          <p><i>Left sidebar</i></p>
+          <div class="code-box">
+						<pre>
+&lt;div id=&quot;main&quot; class=&quot;left-sidebar&quot;&gt;
+	&lt;header class=&quot;page-header&quot;&gt;
+		&lt;h1&gt;Title&lt;/h1&gt;
+	&lt;/header&gt;
+
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-12 col-md-9&quot;&gt;
+				Content
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col-sm-12 col-md-3 sidebar&quot;&gt;
+				Sidebar
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+
+          <p><i>Right sidebar</i></p>
+          <div class="code-box">
+						<pre>
+&lt;div id=&quot;main&quot;&gt;
+	&lt;header class=&quot;page-header&quot;&gt;
+		&lt;h1&gt;Title&lt;/h1&gt;
+	&lt;/header&gt;
+
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-12 col-md-9&quot;&gt;
+				Content
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col-sm-12 col-md-3 sidebar&quot;&gt;
+				Sidebar
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+          <p>In the area of the main content you can insert one or more elements offered by us, single post or posts list.</p>
+          <h3>Main Content Elements:</h3>
+
+					<div>
+						<h4>Contact Form</h4>
+						<p>All data from this form is sent to the email, which can be edited in the file <code>php/contact.php</code>.</p>
+						<div class="code-box">
+							<img src="img/img-21.jpg" alt="">
+							<pre>
+&lt;form method=&quot;post&quot; class=&quot;contact-form m-b-0&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-6&quot;&gt;
+			&lt;div class=&quot;form-group comment-form-author&quot;&gt;
+				&lt;label for=&quot;name&quot; class=&quot;control-label&quot;&gt;Name &lt;span class=&quot;required red-text&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+				&lt;input id=&quot;name&quot; class=&quot;form-control&quot; name=&quot;name&quot; type=&quot;text&quot; value=&quot;&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-6&quot;&gt;
+			&lt;div class=&quot;form-group comment-form-email&quot;&gt;
+				&lt;label for=&quot;email&quot; class=&quot;control-label&quot;&gt;Email &lt;span class=&quot;required red-text&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+				&lt;input id=&quot;email&quot; class=&quot;form-control&quot; name=&quot;email&quot; type=&quot;text&quot; value=&quot;&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-12&quot;&gt;
+			&lt;div class=&quot;form-group comment-form-url&quot;&gt;
+				&lt;label for=&quot;phone&quot; class=&quot;control-label&quot;&gt;Phone&lt;/label&gt;
+				&lt;input id=&quot;phone&quot; class=&quot;form-control&quot; name=&quot;phone&quot; type=&quot;text&quot; value=&quot;&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-12&quot;&gt;
+			&lt;div class=&quot;form-group comment-form-comment&quot;&gt;
+				&lt;label for=&quot;comment&quot; class=&quot;control-label&quot;&gt;Your Message &lt;span class=&quot;required red-text&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+				&lt;textarea id=&quot;comment&quot; class=&quot;form-control&quot; name=&quot;comment&quot;&gt;&lt;/textarea&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;form-submit&quot;&gt;
+		&lt;button type=&quot;submit&quot; class=&quot;btn btn-default submit&quot;&gt;Submit&lt;/button&gt;
+		&lt;span class=&quot;form-message&quot;&gt;&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/form&gt;</pre>
+						</div>
+					</div>
+
+          <div>
+            <h4>Carousel</h4>
+            <div class="code-box">
+              <img src="img/img-20.jpg" alt="">
+							<pre>
+&lt;div class=&quot;owl-carousel carousel&quot;&gt;
+	&lt;div class=&quot;carousel-item&quot;&gt;
+		&lt;img class=&quot;owl-lazy&quot; data-src=&quot;content/img/carousel-1.jpg&quot; data-src-retina=&quot;content/img/carousel-1@2x.jpg&quot; width=&quot;260&quot; height=&quot;260&quot;&gt;
+	&lt;/div&gt;
+	...
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+
+          <div>
+            <h4>Tabs</h4>
+            <div class="code-box">
+              <img src="img/img-22.jpg" alt="">
+							<pre>
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+	&lt;li class=&quot;nav-item&quot;&gt;
+		&lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#tab-1&quot; role=&quot;tab&quot;&gt;Tab 1&lt;/a&gt;
+	&lt;/li&gt;
+	...
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+	&lt;div class=&quot;tab-pane active&quot; id=&quot;tab-1&quot; role=&quot;tabpanel&quot;&gt;
+		...
+	&lt;/div&gt;
+	...
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+				</section><!-- .section -->
+
+        <section id="sidebar" class="section">
+          <h2 class="section-title">Sidebar</h2>
+          <div>
+            <h3>About Me</h3>
+            <div class="code-box">
+              <img src="img/img-12.jpg" alt="">
+							<pre>
+&lt;aside class=&quot;widget bg about-me-widget&quot;&gt;
+	&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;About Me&lt;/span&gt;&lt;/h4&gt;
+
+	&lt;div class=&quot;about-widget&quot;&gt;
+		&lt;div class=&quot;about-img&quot;&gt;
+			&lt;img class=&quot;retina&quot; src=&quot;content/img/about-widget.jpg&quot; width=&quot;250&quot; height=&quot;250&quot; alt=&quot;About Me&quot;&gt;
+		&lt;/div&gt;
+		&lt;p&gt;
+			Text
+			&lt;span class=&quot;clearfix&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;about-me.html&quot;&gt;Read More&lt;/a&gt;
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/aside&gt;</pre>
+            </div>
+          </div>
+
+          <div>
+            <h3>Newsletter</h3>
+            <p>Newsletter form supports such services: Mailchimp, GetResponse, AWeber, Campaign Monitor, iContact. By defaulf e-mails from the form are written in the file <code>php/emails.txt</code>. To bind the form from these services, you need to make the line as a comment in the file <code>php/notify-me.php</code>.</p>
+            <div class="code-box">
+							<pre>
+define('FL_MAIL', 'emails.txt');
+							</pre>
+            </div>
+            <p>and uncomment the needed form (also adding the data from your Subscribe Form account).</p>
+            <div class="code-box">
+							<pre>
+/* Mailchimp setting */
+//define('MC_APIKEY', ''); //Your API key from here - http://admin.mailchimp.com/account/api
+//define('MC_LISTID', ''); //List unique id from here - http://admin.mailchimp.com/lists/
+
+/* GetResponse setting */
+//define('GR_APIKEY', ''); //Your API key fr om here - https://app.getresponse.com/my_api_key.html
+//define('GR_CAMPAIGN', ''); //Campaign name from here - https://app.getresponse.com/campaign_list.html
+
+/* AWeber setting */
+//define('AW_AUTHCODE', ''); //Your Authcode from here - https://auth.aweber.com/1.0/oauth/authorize_app/4ac86d98
+//define('AW_LISTNAME', ''); //List name from here - https://www.aweber.com/users/autoresponder/manage
+
+/* Campaign Monitor setting */
+//define('CM_APIKEY', ''); //Your API key from here - https://www.campaignmonitor.com/api/getting-started/#authenticating_with_an_api_key
+//define('CM_LISTID', ''); //List id from here - https://www.campaignmonitor.com/api/getting-started/#listid
+
+/* iContact setting */
+//define('IC_APPID', ''); //Your APP ID from here - https://app.icontact.com/icp/core/registerapp
+//define('IC_APIUSERNAME', ''); //Your username
+//define('IC_APIPASSWORD', ''); //Your password
+							</pre>
+            </div>
+            <div class="code-box">
+              <img src="img/img-19.jpg" alt="">
+							<pre>
+&lt;aside class=&quot;widget bg social-widget&quot;&gt;
+	&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Follow Us&lt;/span&gt;&lt;/h4&gt;
+
+	&lt;ul class=&quot;social&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-pinterest-p&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/aside&gt;</pre>
+            </div>
+          </div>
+          <div>
+            <h3>Categories</h3>
+            <div class="code-box">
+              <img src="img/img-14.jpg" alt="">
+							<pre>
+&lt;aside class=&quot;widget bg widget_categories&quot;&gt;
+	&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Categories&lt;/span&gt;&lt;/h4&gt;
+	&lt;ul class=&quot;menu&quot;&gt;
+		&lt;li class=&quot;cat-item&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;Development&lt;/a&gt; (5)
+		&lt;/li&gt;
+		&lt;li class=&quot;cat-item active&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;Technological&lt;/a&gt; (6)
+		&lt;/li&gt;
+		&lt;li class=&quot;cat-item&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;Support&lt;/a&gt; (10)
+		&lt;/li&gt;
+		&lt;li class=&quot;cat-item&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;Design&lt;/a&gt; (5)
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/aside&gt;</pre>
+            </div>
+          </div>
+          <div>
+            <h3>Latest Posts</h3>
+            <div class="code-box">
+              <img src="img/img-15.jpg" alt="">
+							<pre>
+&lt;aside class=&quot;widget bg latest-posts-widget&quot;&gt;
+	&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Latest Posts&lt;/span&gt;&lt;/h4&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot; class=&quot;post-img&quot;&gt;
+				&lt;img class=&quot;retina&quot; src=&quot;content/img/post-widget-1.jpg&quot; width=&quot;68&quot; height=&quot;68&quot; alt=&quot;&quot;&gt;
+			&lt;/a&gt;
+			&lt;div class=&quot;post-content&quot;&gt;
+				&lt;h5 class=&quot;post-title&quot;&gt;&lt;a href=&quot;#&quot;&gt;A technological map of the future&lt;/a&gt;&lt;/h5&gt;
+				&lt;div class=&quot;date&quot;&gt;June 4, 2016&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+&lt;/aside&gt;</pre>
+            </div>
+          </div>
+          <div>
+            <h3>Photo Gallery</h3>
+            <div class="code-box">
+              <img src="img/img-16.jpg" alt="">
+							<pre>
+&lt;aside class=&quot;widget bg gallery-widget&quot;&gt;
+	&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Photo Gallery&lt;/span&gt;&lt;/h4&gt;
+
+	&lt;ul class=&quot;gallery-list&quot;&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;content/img/widget-gallery-big-1.jpg&quot; class=&quot;gallery-item&quot;&gt;
+				&lt;img class=&quot;retina&quot; src=&quot;content/img/widget-gallery-1.jpg&quot; width=&quot;100&quot; height=&quot;100&quot; alt=&quot;&quot;&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		...
+	&lt;/ul&gt;
+&lt;/aside&gt;</pre>
+            </div>
+          </div>
+          <div>
+            <h3>Banner</h3>
+            <div class="code-box">
+              <img src="img/img-17.jpg" alt="">
+							<pre>
+&lt;aside class=&quot;widget bg banner-widget&quot;&gt;
+	&lt;img class=&quot;retina banner-img&quot; src=&quot;content/img/widget-banner.jpg&quot; width=&quot;325&quot; height=&quot;350&quot; alt=&quot;banner&quot;&gt;
+
+	&lt;div class=&quot;banner-link&quot;&gt;
+		&lt;div class=&quot;cell-vertical-wrapper&quot;&gt;
+			&lt;div class=&quot;cell-middle&quot;&gt;
+				&lt;h4 class=&quot;title&quot;&gt;Your add here&lt;/h4&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/aside&gt;</pre>
+            </div>
+          </div>
+
+					<div>
+						<h3>Tag Cloud</h3>
+						<div class="code-box">
+							<img src="img/img-18.jpg" alt="">
+							<pre>
+&lt;aside class=&quot;widget bg widget_tag_cloud&quot;&gt;
+	&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Tag cloud&lt;/span&gt;&lt;/h4&gt;
+
+	&lt;div class=&quot;tagcloud&quot;&gt;
+		&lt;a href=&quot;#&quot;&gt;Mobile&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Design&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;App&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Modernize&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Business&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;IT&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Technological&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Support&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/aside&gt;</pre>
+						</div>
+					</div>
+
+					<div>
+						<h3>Follow Us</h3>
+						<div class="code-box">
+							<img src="img/img-13.jpg" alt="">
+							<pre>
+&lt;aside class=&quot;widget bg&quot;&gt;
+	&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Newsletter&lt;/span&gt;&lt;/h4&gt;
+
+	&lt;form class=&quot;subscribe m-b-0&quot;&gt;
+		&lt;div class=&quot;form-group&quot;&gt;
+			&lt;input id=&quot;subscribe&quot; class=&quot;form-control&quot; type=&quot;email&quot; name=&quot;subscribe&quot; placeholder=&quot;your email&quot;&gt;
+			&lt;span class=&quot;form-message&quot;&gt;&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;button class=&quot;btn btn-block btn-outline-default&quot;&gt;Subscribe&lt;/button&gt;
+	&lt;/form&gt;
+&lt;/aside&gt;</pre>
+						</div>
+					</div>
+        </section><!-- .section -->
+
+        <section id="footer" class="section">
+          <h2 class="section-title">Footer</h2>
+					<p>Footer can have several design variants:</p>
+					<h3>Standard Footer</h3>
+          <div class="code-box">
+            <img src="img/img-9.jpg" alt="">
+						<pre>
+&lt;footer id=&quot;footer&quot; class=&quot;site-footer&quot;&gt;
+	&lt;div class=&quot;footer-banners&quot;&gt;
+		&lt;h4 class=&quot;banners-title&quot;&gt;Follow us &lt;span class=&quot;accent-color&quot;&gt;@&lt;/span&gt; Instagram&lt;/h4&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot;&gt;
+					&lt;img class=&quot;retina&quot; src=&quot;content/img/footer-1.jpg&quot; width=&quot;240&quot; height=&quot;240&quot; alt=&quot;&quot;&gt;
+					&lt;ul class=&quot;item-info&quot;&gt;
+						&lt;li class=&quot;likes&quot;&gt;11859&lt;/li&gt;
+						&lt;li class=&quot;comments&quot;&gt;31&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			...
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-6 text-xs-center text-sm-left&quot;&gt;
+				&lt;p&gt;&amp;#169; 2016 - All Rights Reserved.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-6 text-xs-center text-sm-right&quot;&gt;
+				&lt;p&gt;Designed &amp;amp; Developed by &lt;a href=&quot;#&quot;&gt;Next Item&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;</pre>
+          </div>
+
+					<h3>Footer with menu</h3>
+					<div class="code-box">
+						<img src="img/img-10.jpg" alt="">
+						<pre>
+&lt;footer id=&quot;footer&quot; class=&quot;site-footer&quot;&gt;
+	&lt;div class=&quot;footer-banners&quot;&gt;
+		&lt;h4 class=&quot;banners-title&quot;&gt;Follow us &lt;span class=&quot;accent-color&quot;&gt;@&lt;/span&gt; Instagram&lt;/h4&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot;&gt;
+					&lt;img class=&quot;retina&quot; src=&quot;content/img/footer-1.jpg&quot; width=&quot;240&quot; height=&quot;240&quot; alt=&quot;&quot;&gt;
+					&lt;ul class=&quot;item-info&quot;&gt;
+						&lt;li class=&quot;likes&quot;&gt;11859&lt;/li&gt;
+						&lt;li class=&quot;comments&quot;&gt;31&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			...
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-6 text-xs-center text-sm-left&quot;&gt;
+				&lt;p&gt;&amp;#169; 2016 - All Rights Reserved.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-6 text-xs-center text-sm-right&quot;&gt;
+				&lt;nav class=&quot;footer-menu&quot;&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href=&quot;blog-standard.html&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;about-me.html&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;contacts.html&quot;&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/nav&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;</pre>
+					</div>
+
+					<h3>Footer with widgets</h3>
+					<div class="code-box">
+						<img src="img/img-11.jpg" alt="">
+						<pre>
+&lt;footer id=&quot;footer&quot; class=&quot;site-footer bg&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row sidebar footer-sidebar&quot;&gt;
+			&lt;div class=&quot;col-xs-12 col-md-6 col-lg-3&quot;&gt;
+				&lt;aside class=&quot;widget widget_categories&quot;&gt;
+					&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Categories&lt;/span&gt;&lt;/h4&gt;
+					&lt;ul class=&quot;menu&quot;&gt;
+						&lt;li class=&quot;cat-item&quot;&gt;
+							&lt;a href=&quot;#&quot;&gt;Development&lt;/a&gt; (5)
+						&lt;/li&gt;
+						...
+					&lt;/ul&gt;
+				&lt;/aside&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col-xs-12 col-md-6 col-lg-3&quot;&gt;
+				&lt;aside class=&quot;widget latest-posts-widget&quot;&gt;
+					&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Latest Posts&lt;/span&gt;&lt;/h4&gt;
+					&lt;ul&gt;
+						&lt;li&gt;
+							&lt;a href=&quot;#&quot; class=&quot;post-img&quot;&gt;
+								&lt;img class=&quot;retina&quot; src=&quot;content/img/post-widget-1.jpg&quot; width=&quot;68&quot; height=&quot;68&quot; alt=&quot;&quot;&gt;
+							&lt;/a&gt;
+							&lt;div class=&quot;post-content&quot;&gt;
+								&lt;h5 class=&quot;post-title&quot;&gt;&lt;a href=&quot;#&quot;&gt;A technological map of the future&lt;/a&gt;&lt;/h5&gt;
+								&lt;div class=&quot;date&quot;&gt;June 4, 2016&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						...
+					&lt;/ul&gt;
+				&lt;/aside&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col-xs-12 col-md-6 col-lg-3&quot;&gt;
+				&lt;aside class=&quot;widget gallery-widget&quot;&gt;
+					&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Photo Gallery&lt;/span&gt;&lt;/h4&gt;
+
+					&lt;ul class=&quot;gallery-list&quot;&gt;
+						&lt;li&gt;
+							&lt;a href=&quot;content/img/widget-gallery-big-1.jpg&quot; class=&quot;gallery-item&quot;&gt;
+								&lt;img class=&quot;retina&quot; src=&quot;content/img/widget-gallery-1.jpg&quot; width=&quot;100&quot; height=&quot;100&quot; alt=&quot;&quot;&gt;
+							&lt;/a&gt;
+						&lt;/li&gt;
+						...
+					&lt;/ul&gt;
+				&lt;/aside&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col-xs-12 col-md-6 col-lg-3&quot;&gt;
+				&lt;aside class=&quot;widget&quot;&gt;
+					&lt;h4 class=&quot;widget-title&quot;&gt;&lt;span&gt;Newsletter&lt;/span&gt;&lt;/h4&gt;
+
+					&lt;form class=&quot;subscribe m-b-0&quot;&gt;
+						&lt;div class=&quot;form-group&quot;&gt;
+							&lt;input id=&quot;subscribe&quot; class=&quot;form-control&quot; type=&quot;email&quot; name=&quot;subscribe&quot; placeholder=&quot;your email&quot;&gt;
+							&lt;span class=&quot;form-message&quot;&gt;&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;button class=&quot;btn btn-block btn-outline-default&quot;&gt;Subscribe&lt;/button&gt;
+					&lt;/form&gt;
+				&lt;/aside&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;hr&gt;
+
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-6 text-xs-center text-sm-left&quot;&gt;
+				&lt;p&gt;&amp;#169; 2016 - All Rights Reserved.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-6 text-xs-center text-sm-right&quot;&gt;
+				&lt;p&gt;Designed &amp;amp; Developed by &lt;a href=&quot;#&quot;&gt;Next Item&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;</pre>
+					</div>
+        </section><!-- .section -->
+				
+				<section id="retina" class="section">
+					<h2 class="section-title">Retina</h2>
+					<p>In <strong><span class="accent-color">X</span>blog</strong> to enable the Retina for images you should have two images:</p>
+					<ul>
+						<li>first one has the standard size and a standard name (<code>image.jpg</code>)</li>
+						<li>second one must be twice bigger then the origin and have additional annex @2x (<code>image@2x.jpg</code>)</li>
+					</ul>
+					<p>Both images must be in the same folder!</p>
+					<p>So, how we can enable it in our html template? You should insert a class <code>retina</code> into the 'img' tag.</p>
+					<div class="code-box">
+						<pre>
+&lt;img class=&quot;<kbd>retina</kbd>&quot; src=&quot;image.jpg&quot; width=&quot;158&quot; height=&quot;158&quot; alt=&quot;&quot;&gt;
+						</pre>
+					</div>
+				</section><!-- .section -->
+				
+				<section id="sass" class="section">
+					<h2 class="section-title">Sass Files</h2>
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover align-left">
+							<tbody>
+								<tr>
+									<th>Location</th>
+									<th>Description</th>
+								</tr>
+								<tr>
+									<td>
+										sass/style.scss
+									</td>
+									<td>
+										imports all styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_animation.scss
+									</td>
+									<td>
+										include file for animation
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_banners.scss
+									</td>
+									<td>
+										file with banners styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_fonts.scss
+									</td>
+									<td>
+										include all fonts
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_footer.scss
+									</td>
+									<td>
+										file with footer styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_helper-classes.scss
+									</td>
+									<td>
+										file with helper classes
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_preloader.scss
+									</td>
+									<td>
+										file with preloader styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_sidebar.scss
+									</td>
+									<td>
+										file with sidebar styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_slider.scss
+									</td>
+									<td>
+										file with slider styles
+									</td>
+								</tr>
+                <tr>
+									<td>
+										dev/sass/_structure.scss
+									</td>
+									<td>
+										file with styles of structure site
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_typography.scss
+									</td>
+									<td>
+										file with typography styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_variables.scss
+									</td>
+									<td>
+										file with variables used in theme styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/_widgets.scss
+									</td>
+									<td>
+										file with widgets styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/bootstrap.scss
+										dev/sass/bootstrap/*
+									</td>
+									<td>
+										files with bootstrap styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/elements/*
+									</td>
+									<td>
+										files with site styles for elements
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/header/*
+									</td>
+									<td>
+										files with header styles
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/page/*
+									</td>
+									<td>
+										files with styles for pages
+									</td>
+								</tr>
+								<tr>
+									<td>
+										dev/sass/post/*
+									</td>
+									<td>
+										files with styles for posts
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section><!-- .section -->
+				
+				<section id="css" class="section">
+					<h2 class="section-title">CSS Files</h2>
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover align-left">
+							<tbody>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Location</th>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a>
+									</td>
+									<td>
+										Just-add-water CSS animations
+									</td>
+									<td>
+										css/animate.min.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>
+									</td>
+									<td>
+										Styles for Font Awesome
+									</td>
+									<td>
+										css/font-awesome.min.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+									</td>
+									<td>
+										Defines main Bootstrap classes
+									</td>
+									<td>
+										css/bootstrap.min.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.owlcarousel.owlgraphic.com/" target="_blank">OWL Carousel</a>
+									</td>
+									<td>
+										Styles for OWL Carousel
+									</td>
+									<td>
+										css/owl.carousel.min.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a>
+									</td>
+									<td>
+										Styles for Magnific Popup
+									</td>
+									<td>
+										css/magnific-popup.css
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Theme styles
+									</td>
+									<td>
+										Contains all of the specific stylings for the theme.
+									</td>
+									<td>
+										css/style.css
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section><!-- .section -->
+				
+				<section id="js" class="section">
+					<h2 class="section-title">JS Files</h2>
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover align-left">
+							<tbody>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Location</th>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://github.com/morr/jquery.appear" target="_blank">jQuery.appear</a>
+									</td>
+									<td>
+										This plugin can be used to prevent unnecessary processeing for content that is hidden or is outside of the browser viewport.
+									</td>
+									<td>
+										js/appear.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+									</td>
+									<td>
+										Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+									</td>
+									<td>
+										js/bootstrap.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a>
+									</td>
+									<td>
+										Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device.
+									</td>
+									<td>
+										js/jquery.magnific-popup.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.netcu.de/jquery-touchwipe-iphone-ipad-library" target="_blank">jQuery Touchwipe Plugin</a>
+									</td>
+									<td>
+										The small 1 KB library allows you to obtain the wipe event on an iPhone, iPad or iPod Touch which can be used for example to scroll through an image gallery (see demo below). Should also work with Android touchscreens.
+									</td>
+									<td>
+										js/jquery.touchwipe.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://jquery.com/" target="_blank">jQuery</a>
+									</td>
+									<td>
+										Core Javascript library
+									</td>
+									<td>
+										js/jquery-3.1.1.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://code.jquery.com/jquery-migrate-3.0.0.js" target="_blank">jQuery Migrate</a>
+									</td>
+									<td>
+										Migrate older jQuery code to jQuery 3.0+
+									</td>
+									<td>
+										js/jquery-migrate-1.4.1.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Theme scripts
+									</td>
+									<td>
+										Contains all of the specific scripts for the theme.
+									</td>
+									<td>
+										js/main.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://masonry.desandro.com/" target="_blank">Masonry</a>
+									</td>
+									<td>
+										Cascading grid layout library
+									</td>
+									<td>
+										js/masonry.pkgd.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://www.owlcarousel.owlgraphic.com/" target="_blank">OWL Carousel</a>
+									</td>
+									<td>
+										Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.
+									</td>
+									<td>
+										js/owl.carousel.min.js
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://tether.io/" target="_blank">Tether</a>
+									</td>
+									<td>
+										A client-side library to make absolutely positioned elements attach to elements in the page efficiently.
+									</td>
+									<td>
+										js/tether.min.js
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section><!-- .section -->
+				
+				<section id="fonts" class="section">
+					<h2 class="section-title">Fonts</h2>
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover align-left">
+							<tbody>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Location</th>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,600,600italic,300,300italic" target="_blank">Open Sans</a>
+									</td>
+									<td>
+										Google font
+									</td>
+									<td></td>
+								</tr>
+                <tr>
+									<td>
+										<a href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,400italic,600,600italic,700,700italic" target="_blank">Josefin Sans</a>
+									</td>
+									<td>
+										Google font
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>
+									</td>
+									<td>
+										Font Awesome gives you scalable vector icons that can instantly be customized - size, color, drop shadow, and anything that can be done with the power of CSS.
+									</td>
+									<td>
+										fonts/fontawesome/...
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section><!-- .section -->
+			</div>
+		</div>
+	</div>
+
+<!--[if (!IE)|(gt IE 8)]><!-->
+  <script src="js/jquery-2.1.3.min.js"></script>
+<!--<![endif]-->
+
+<!--[if lte IE 8]>
+  <script src="js/jquery-1.9.1.min.js"></script>
+<![endif]-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
