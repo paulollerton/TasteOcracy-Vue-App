@@ -18,123 +18,11 @@
                 <ul class="menu-list">
                   <li class="menu-item menu-item-has-children">
                     <a href="/">Home</a>
-                    <div class="sub-menu-wrap">
-                      <ul class="sub-menu">
-                        <li class="menu-item"><a href="index.html">Main</a></li>
-                        <li class="menu-item"><a href="index-2.html">With main post</a></li>
-                        <li class="menu-item"><a href="index-3.html">With sidebar</a></li>
-                        <li class="menu-item"><a href="index-4.html">Fullscreen slider</a></li>
-                        <li class="menu-item"><a href="index-5.html">Animation</a></li>
-                        <li class="menu-item"><a href="index-6.html">Timeline</a></li>
-                      </ul>
-                    </div>
                   </li>
                   <li class="menu-item menu-item-has-children">
                     <a href="/recipes/new">Submit a Recipe</a>
-                    <div class="sub-menu-wrap">
-                      <ul class="sub-menu">
-                        <li class="menu-item menu-item-has-children">
-                          <a href="header-1.html">Headers</a>
-                          <div class="sub-menu-wrap">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="header-1.html">Standard</a></li>
-                              <li class="menu-item"><a href="header-2.html">Fixed</a></li>
-                              <li class="menu-item"><a href="header-3.html">Fixed with dynamic height</a></li>
-                              <li class="menu-item"><a href="header-4.html">Divided</a></li>
-                              <li class="menu-item"><a href="header-5.html">Full width</a></li>
-                              <li class="menu-item"><a href="header-6.html">Transparent</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                          <a href="menu-1.html">Menu styles</a>
-                          <div class="sub-menu-wrap">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="menu-1.html">Standard</a></li>
-                              <li class="menu-item"><a href="menu-2.html">Collapsed</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                          <a href="page-header-1.html">Page titles</a>
-                          <div class="sub-menu-wrap">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="page-header-1.html">Standard</a></li>
-                              <li class="menu-item"><a href="page-header-2.html">With background</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                          <a href="index-3.html">Sliders</a>
-                          <div class="sub-menu-wrap">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="index-3.html">Standard</a></li>
-                              <li class="menu-item"><a href="index.html">Slider Overlay</a></li>
-                              <li class="menu-item"><a href="index-4.html">Fullscreen</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                          <a href="footer-1.html#footer">Footer</a>
-                          <div class="sub-menu-wrap">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="footer-1.html#footer">Standard</a></li>
-                              <li class="menu-item"><a href="footer-2.html#footer">With menu</a></li>
-                              <li class="menu-item"><a href="footer-3.html#footer">With widgets</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item"><a href="typography.html">Typography</a></li>
-                      </ul>
-                    </div>
                   </li>
                   <li class="menu-item menu-item-has-children">
-                    <a href="blog-standard.html">Blog</a>
-                    <div class="sub-menu-wrap">
-                      <ul class="sub-menu">
-                        <li class="menu-item menu-item-has-children">
-                          <a href="blog-standard.html">Standard Layout</a>
-                          <div class="sub-menu-wrap">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="blog-standard-ls.html">Sidebar Left</a></li>
-                              <li class="menu-item"><a href="blog-standard-rs.html">Sidebar Right</a></li>
-                              <li class="menu-item"><a href="blog-standard.html">Fullwidth</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                          <a href="blog-grid.html">Grid Layout</a>
-                          <div class="sub-menu-wrap">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="blog-grid-ls.html">Grid Sidebar Left</a></li>
-                              <li class="menu-item"><a href="blog-grid-rs.html">Grid Sidebar Right</a></li>
-                              <li class="menu-item"><a href="blog-grid.html">Grid 2 Columns</a></li>
-                              <li class="menu-item"><a href="blog-grid-3.html">Grid 3 Columns</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item"><a href="blog-list.html">List Layout</a></li>
-                        <li class="menu-item"><a href="blog-modern.html">Modern List Layout</a></li>
-                        <li class="menu-item"><a href="blog-masonry.html">Masonry Layout</a></li>
-                        <li class="menu-item"><a href="blog-social.html">Social Feed Layout</a></li>
-                        <li class="menu-item"><a href="blog-timeline.html">Timeline Layout</a></li>
-                        <li class="menu-item menu-item-has-children">
-                          <a href="post.html">Single Post</a>
-                          <div class="sub-menu-wrap">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="post.html">Standard Post</a></li>
-                              <li class="menu-item"><a href="post-video.html">Video Post</a></li>
-                              <li class="menu-item"><a href="post-music.html">Music Post</a></li>
-                              <li class="menu-item"><a href="post-gallery.html">Gallery Post</a></li>
-                              <li class="menu-item"><a href="post-quote.html">Quote Post</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  
-                  <li class="menu-item">
                     <a href="about-me.html">About</a>
                   </li>
                   <li class="menu-item" v-if="!isLoggedIn()">
@@ -172,27 +60,7 @@
                     <router-link v-bind:to="'/users/me'">Profile</router-link>
                     <div class="sub-menu-wrap">
                       <ul class="sub-menu">
-                        <li class="menu-item menu-item-has-children">
-                          <a href="about-me.html">About Me</a>
-                          <div class="sub-menu-wrap reverted">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="about-me.html">About Me</a></li>
-                              <li class="menu-item"><a href="about-me-2.html">About Me 2</a></li>
-                              <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                              <li class="menu-item"><a href="about-us-2.html">About Us 2</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                          <a href="contacts.html">Contacts</a>
-                          <div class="sub-menu-wrap reverted">
-                            <ul class="sub-menu">
-                              <li class="menu-item"><a href="contacts.html">Contact Me</a></li>
-                              <li class="menu-item"><a href="contacts-2.html">Contact Us</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="menu-item"><a href="404.html">Page 404</a></li>
+                        <li class="menu-item"><a href="/logout">Sign Out</a></li>
                       </ul>
                     </div>
                   </li>
