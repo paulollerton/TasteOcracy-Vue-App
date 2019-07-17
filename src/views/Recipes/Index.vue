@@ -81,7 +81,7 @@
             </div>
 
             <nav>
-              <ul class="row pager">
+              <ul class="column pager">
                 <li class="col-xs-6 text-xs-left"></li>
                 <li class="col-xs-6 text-xs-right"><a href="#">Older Posts <span class="arrow-right"></span></a></li>
               </ul>

@@ -5,9 +5,9 @@
       <div class="container">
         <div class="row">
           <div class="col col-xs-6 col-md-3">
-            <a href="index.html" class="logo">
-              <img src="img/logo.svg" width="120" height="66" alt="Logo">
-            </a>
+            <h3><a href="/" class="logo">
+              TasteOcracy
+            </a></h3>
           </div>
 
           <div class="col col-xs-6 col-md-9 right-align">
@@ -156,7 +156,7 @@
         <ul>
           <li>
             <a href="#">
-              <img class="retina" src="content/img/footer-1.jpg" width="240" height="240" alt="">
+              <img class="retina" src="https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/exps28800_UG143377D12_18_1b_RMS.jpg" width="240" height="240" alt="">
               <ul class="item-info">
                 <li class="likes">11859</li>
                 <li class="comments">31</li>
@@ -165,7 +165,7 @@
           </li>
           <li>
             <a href="#">
-              <img class="retina" src="content/img/footer-2.jpg" width="240" height="240" alt="">
+              <img class="retina" src="https://assets.epicurious.com/photos/54af5217c4a891cc44cce500/2:1/w_1260%2Ch_630/51179080_grilled-corn_1x1.jpg" width="240" height="240" alt="">
               <ul class="item-info">
                 <li class="likes">9254</li>
                 <li class="comments">52</li>
@@ -174,7 +174,7 @@
           </li>
           <li>
             <a href="#">
-              <img class="retina" src="content/img/footer-3.jpg" width="240" height="240" alt="">
+              <img class="retina" src="https://www.rd.com/wp-content/uploads/2016/12/01_your_ultimate_guide_throwing_succesfuly_wine_cheese_party_textures_DragojaGagiTubic.jpg" width="240" height="240" alt="">
               <ul class="item-info">
                 <li class="likes">615</li>
                 <li class="comments">20</li>
@@ -183,7 +183,7 @@
           </li>
           <li>
             <a href="#">
-              <img class="retina" src="content/img/footer-4.jpg" width="240" height="240" alt="">
+              <img class="retina" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/vegetable-ratatouille-v3-1547814693.jpg?crop=1.00xw:0.629xh;0,0.199xh&resize=480:*" width="240" height="240" alt="">
               <ul class="item-info">
                 <li class="likes">992</li>
                 <li class="comments">12</li>
@@ -192,7 +192,7 @@
           </li>
           <li>
             <a href="#">
-              <img class="retina" src="content/img/footer-5.jpg" width="240" height="240" alt="">
+              <img class="retina" src="https://www.justataste.com/wp-content/uploads/2017/10/apple-sage-roast-chicken-recipe.jpg" width="240" height="240" alt="">
               <ul class="item-info">
                 <li class="likes">2456</li>
                 <li class="comments">45</li>
@@ -201,7 +201,7 @@
           </li>
           <li>
             <a href="#">
-              <img class="retina" src="content/img/footer-6.jpg" width="240" height="240" alt="">
+              <img class="retina" src="https://www.mykitchenescapades.com/wp-content/uploads/2019/03/French-Bread.jpg" width="240" height="240" alt="">
               <ul class="item-info">
                 <li class="likes">3254</li>
                 <li class="comments">9</li>
@@ -210,7 +210,7 @@
           </li>
           <li>
             <a href="#">
-              <img class="retina" src="content/img/footer-7.jpg" width="240" height="240" alt="">
+              <img class="retina" src="https://www.tablefortwoblog.com/wp-content/uploads/2018/05/quick-chopped-salad-recipe-photos-tablefortwoblog-3.jpg" width="240" height="240" alt="">
               <ul class="item-info">
                 <li class="likes">875</li>
                 <li class="comments">44</li>
@@ -219,7 +219,7 @@
           </li>
           <li>
             <a href="#">
-              <img class="retina" src="content/img/footer-8.jpg" width="240" height="240" alt="">
+              <img class="retina" src="https://www.spendwithpennies.com/wp-content/uploads/2018/09/SpendWithPennies-Apple-Pie-Recipe-31.jpg" width="240" height="240" alt="">
               <ul class="item-info">
                 <li class="likes">548</li>
                 <li class="comments">51</li>
@@ -231,10 +231,10 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 text-xs-center text-sm-left">
-            <p>&#169; 2016 - All Rights Reserved.</p>
+            <p>&#169; 2019 - All Rights Reserved.</p>
           </div>
           <div class="col-sm-6 text-xs-center text-sm-right">
-            <p>Designed &amp; Developed by <a href="#">Next Item</a></p>
+            <p>Designed &amp; Developed by <a href="#">Next Item</a> &amp; Paul</p>
           </div>
         </div>
       </div>
@@ -244,6 +244,10 @@
 </template>
 
 <style>
+
+footer img {
+  height: 150px;
+}
 
 </style>
 
