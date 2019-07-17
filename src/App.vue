@@ -17,7 +17,7 @@
               <nav class="menu-list-wrap">
                 <ul class="menu-list">
                   <li class="menu-item menu-item-has-children">
-                    <a href="index.html">Home</a>
+                    <a href="/">Home</a>
                     <div class="sub-menu-wrap">
                       <ul class="sub-menu">
                         <li class="menu-item"><a href="index.html">Main</a></li>
@@ -30,7 +30,7 @@
                     </div>
                   </li>
                   <li class="menu-item menu-item-has-children">
-                    <a href="#">Features</a>
+                    <a href="/recipes/new">Submit a Recipe</a>
                     <div class="sub-menu-wrap">
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children">
@@ -133,8 +133,15 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="menu-item menu-item-has-children">
-                    <a href="about-me.html">Pages</a>
+                  
+                  <li class="menu-item">
+                    <a href="about-me.html">About</a>
+                  </li>
+                  <li class="menu-item" v-if="!isLoggedIn()">
+                    <a href="/login">Log In</a>
+                  </li>
+                  <li class="menu-item menu-item-has-children" v-if="!isLoggedIn()">
+                    <a href="/signup">Sign Up</a>
                     <div class="sub-menu-wrap">
                       <ul class="sub-menu">
                         <li class="menu-item menu-item-has-children">
@@ -161,8 +168,34 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="menu-item"><a href="about-me.html">About Me</a></li>
-                  <li class="menu-item"><a href="contacts.html">Contacts</a></li>
+                  <li class="menu-item menu-item-has-children" v-if="isLoggedIn()">
+                    <router-link v-bind:to="'/users/me'">Profile</router-link>
+                    <div class="sub-menu-wrap">
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-has-children">
+                          <a href="about-me.html">About Me</a>
+                          <div class="sub-menu-wrap reverted">
+                            <ul class="sub-menu">
+                              <li class="menu-item"><a href="about-me.html">About Me</a></li>
+                              <li class="menu-item"><a href="about-me-2.html">About Me 2</a></li>
+                              <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                              <li class="menu-item"><a href="about-us-2.html">About Us 2</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                          <a href="contacts.html">Contacts</a>
+                          <div class="sub-menu-wrap reverted">
+                            <ul class="sub-menu">
+                              <li class="menu-item"><a href="contacts.html">Contact Me</a></li>
+                              <li class="menu-item"><a href="contacts-2.html">Contact Us</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="menu-item"><a href="404.html">Page 404</a></li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </nav><!-- .menu-list-wrap -->
             </div><!-- .main-menu -->
@@ -246,7 +279,7 @@
       </div>
     </header><!-- .site-header -->
 
-    <router-view/>
+    <router-view :key="$route.path"/>
 
     <footer class="site-footer">
       <div class="footer-banners">
@@ -345,3 +378,31 @@
 <style>
 
 </style>
+
+<script>
+import axios from "axios";
+
+export default {
+  data: function() {
+    return {
+      currentRecipe: {},
+      recipes: []
+    };
+  },
+  created: function() {
+    axios.get("/api/recipes").then(response => {
+      this.recipes = response.data;
+      console.log(this.recipes);
+    });
+  },
+  methods: {
+    isLoggedIn: function() {
+      if (localStorage.getItem("jwt")) {
+        return true;
+      }
+      return false;
+    },
+
+  }
+};
+</script>

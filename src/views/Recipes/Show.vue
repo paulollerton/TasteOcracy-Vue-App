@@ -1,6 +1,8 @@
 <template>
   <div class="recipes-show">
 
+    post.html
+
     <button class="btn btn-warning">
       <router-link v-bind:to="'/signup'">Create Account</router-link>
     </button>

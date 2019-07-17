@@ -1,9 +1,7 @@
 <template>
   <div class ="users-show">
 
-    <!-- <router-link v-bind:to="'/users/' + user.id" tag="img" v-bind:src="user.image_url"></router-link> -->
-
-    <p><a v-bind:to="'/users' + user.id"><img v-bind:src="user.image_url"></a></p>
+    blog-grid-ls.html
 
     <button class="btn btn-warning">
       <router-link v-bind:to="'/signup'">Create Account</router-link>
