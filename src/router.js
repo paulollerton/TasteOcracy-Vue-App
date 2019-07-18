@@ -11,7 +11,9 @@ import RecipesShow from './views/Recipes/Show.vue';
 import RecipesNew from './views/Recipes/New.vue';
 import RecipesEdit from './views/Recipes/Edit.vue';
 import SuggestionsNew from './views/Suggestions/New.vue';
+import SuggestionsEdit from './views/Suggestions/Edit.vue';
 import CommentsNew from './views/Comments/New.vue';
+import CommentsEdit from './views/Comments/Edit.vue';
 
 
 Vue.use(Router);
@@ -79,9 +81,19 @@ export default new Router({
       component: SuggestionsNew
     },
     {
+      path: '/suggestions/:id/edit',
+      name: 'suggestions-edit',
+      component: SuggestionsEdit
+    },
+    {
       path: '/comments/new',
       name: 'comments-new',
       component: CommentsNew
+    },
+    {
+      path: '/comments/:id/edit',
+      name: 'comments-edit',
+      component: CommentsEdit
     },
   ]
 });
