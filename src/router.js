@@ -11,6 +11,8 @@ import RecipesShow from './views/Recipes/Show.vue';
 import RecipesNew from './views/Recipes/New.vue';
 import RecipesEdit from './views/Recipes/Edit.vue';
 import SuggestionsNew from './views/Suggestions/New.vue';
+import CommentsNew from './views/Comments/New.vue';
+
 
 Vue.use(Router);
 
@@ -75,6 +77,11 @@ export default new Router({
       path: '/suggestions/new',
       name: 'suggestions-new',
       component: SuggestionsNew
-    }
+    },
+    {
+      path: '/comments/new',
+      name: 'comments-new',
+      component: CommentsNew
+    },
   ]
 });

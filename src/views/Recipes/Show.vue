@@ -140,7 +140,7 @@
           <div class="comment-respond">
             <h4 class="comment-reply-title title">Leave a Comment</h4>
 
-            <form class="comment-form">
+            <form v-on:submit.prevent="submit()" class="comment-form">
               <p class="comment-notes">
                 <span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span>
               </p>
@@ -153,7 +153,7 @@
                 <input id="author" type="text" name="author" class="form-control">
               </div> -->
               <p class="form-group btn-form-group">
-                <button class="btn btn-default submit"><router-link v-bind:to="'/comments'">Post Comment</router-link></button>
+                <button class="btn btn-default submit">Post Comment</button>
               </p>
             </form>
           </div><!-- .comment-respond -->
