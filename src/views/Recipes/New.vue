@@ -1,5 +1,5 @@
 <template>
-  <div class="recipes-new">
+  <!-- <div class="recipes-new">
     
     <h1>New Recipe</h1>
 
@@ -45,7 +45,63 @@
       <button type="submit" class="btn btn-primary btn-outline">Submit</button>
     </form>
 
-  </div>
+  </div> -->
+
+
+
+  <main id="main">
+    <header class="page-header">
+      <h1><span class="accent-color">New</span> Recipe</h1>
+    </header>
+
+    <div class="container">
+
+      <div class="post-comments">
+
+        <div class="comment-respond">
+
+          <form v-on:submit.prevent="submit()" class="comment-form">
+
+            <div class="form-group left-field">
+              <label class="control-label" for="author">Title <span class="required red-text">*</span></label>
+              <input id="author" type="text" name="author" class="form-control" placeholder="Tea" v-model="newRecipeTitle">
+            </div>
+            <div class="form-group left-field">
+              <label class="control-label" for="author">Image URL <span class="required red-text">*</span></label>
+              <input id="author" type="text" name="author" class="form-control" placeholder="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/03/14/istock-502426854.jpg?w968h681" v-model="newRecipeImageUrl">
+            </div>
+            <div class="form-group left-field">
+              <label class="control-label" for="author">Category <span class="required red-text">*</span></label>
+              <input id="author" type="text" name="author" class="form-control" placeholder="Drinks" v-model="newRecipeCategory">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="comment">Blurb <span class="required red-text">*</span></label>
+              <textarea id="comment" class="form-control" name="comment" cols="30" rows="4" placeholder="I love tea, it helps me to calm down after my evil plans have been thwarted by a young boy." v-model="newRecipeBlurb"></textarea>
+            </div>
+            <div class="form-group right-field">
+              <label class="control-label" for="author">Prep Time <span class="required red-text">*</span></label>
+              <input id="author" type="author" name="author" class="form-control" placeholder="5" v-model="newRecipePrepTime">
+            </div>
+            <div class="form-group right-field">
+              <label class="control-label" for="author">Cook Time <span class="required red-text">*</span></label>
+              <input id="author" type="author" name="author" class="form-control" placeholder="0" v-model="newRecipeCookTIme">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="comment">Ingredients <span class="required red-text">*</span></label>
+              <textarea id="comment" class="form-control" name="comment" cols="30" rows="4" placeholder="Tea, Hot Water" v-model="newRecipeIngredients"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="comment">Directions <span class="required red-text">*</span></label>
+              <textarea id="comment" class="form-control" name="comment" cols="30" rows="4" placeholder="Steep tea in hot water, drink." v-model="newRecipeDirections"></textarea>
+            </div>
+            <p class="form-group btn-form-group">
+              <button class="btn btn-default submit">Submit</button>
+            </p>
+          </form>
+        </div><!-- .comment-respond -->
+      </div><!-- .post-comments -->
+    </div>
+  </main><!-- #main -->
 </template>
 
 <script>
