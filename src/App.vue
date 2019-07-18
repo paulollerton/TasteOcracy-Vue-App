@@ -261,12 +261,6 @@ export default {
       recipes: []
     };
   },
-  created: function() {
-    axios.get("/api/recipes").then(response => {
-      this.recipes = response.data;
-      console.log(this.recipes);
-    });
-  },
   methods: {
     isLoggedIn: function() {
       if (localStorage.getItem("jwt")) {

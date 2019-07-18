@@ -44,12 +44,9 @@
               <article class="col-xs-12 col-lg-6 col-xl-4 grid-item">
                 <div class="post bg">
                   <div class="post-media">
-                    <!-- <router-link v-bind:to="'/recipes/' + recipe.id">
-                      <img v-bind:src="recipe.image_url">
-                    </router-link> -->
-                    <a href="post.html">
+                    <router-link v-bind:to="'/recipes/' + recipe.id">
                       <img class="retina" v-bind:src="recipe.image_url" width="338" height="320" alt="Post Image">
-                    </a>
+                    </router-link>
                   </div>
 
                   <div class="post-header center-align">
@@ -81,7 +78,7 @@
             </div>
 
             <nav>
-              <ul class="column pager">
+              <ul class="row pager">
                 <li class="col-xs-6 text-xs-left"></li>
                 <li class="col-xs-6 text-xs-right"><a href="#">Older Posts <span class="arrow-right"></span></a></li>
               </ul>
