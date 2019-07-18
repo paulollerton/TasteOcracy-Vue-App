@@ -113,7 +113,7 @@
         </article><!-- .post -->
 
         <div class="post-comments">
-          <h4 class="title">3 Comments</h4>
+          <h4 class="title">Comments</h4>
 
           <ul class="comments">
             <li v-for="comment in recipe.comments" class="comment even">
@@ -125,57 +125,20 @@
                 <span class="reply">
                   <a class="comment-reply-link" href="#">Reply</a>
                 </span>
-                <h6 class="author">Mr. Braun</h6>
+                <h6 class="author">{{ comment.user_id}}</h6>
                 <span class="date">Posted on November 25, 2016</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda eaque eligendi in
-                  magnam neque nesciunt quod sint. Accusamus aliquam commodi corporis cumque delectus dolor dolorum
-                  esse excepturi explicabo harum incidunt itaque iure labore laborum maiores maxime minima natus,
-                  necessitatibus nemo odio pariatur quasi reiciendis rem sint sunt tempore ullam ut veritatis voluptas
-                  voluptates. Commodi dolores eos, et eum laudantium odio perferendis placeat praesentium quae suscipit
-                  tempora tenetur voluptate voluptates.</p>
+                <p>{{ comment.content }}</p>
               </div>
-
-              <ul class="children">
-                <li class="comment odd">
-                  <div class="author-img">
-                    <img src="content/img/avatar-2.jpg" class="avatar" height="50" width="50" alt="">
-                  </div>
-
-                  <div class="comment-text">
-                    <span class="reply">
-                      <a class="comment-reply-link" href="#">Reply</a>
-                    </span>
-                    <h6 class="author">Next Item</h6>
-                    <span class="date">Posted on November 26, 2016</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur ex illo nihil
-                      nobis pariatur tempore tenetur veniam voluptatem voluptatum! Autem delectus hic laborum laudantium
-                      maxime quis similique! Commodi consectetur dolores excepturi exercitationem impedit natus quasi
-                      quisquam quos veritatis voluptatum.</p>
-                  </div>
-                </li>
-              </ul><!-- .children -->
             </li>
             <li class="comment byuser comment-author-solopine bypostauthor even thread-odd thread-alt depth-1" id="comment-3">
-              <div class="author-img">
-                <img src="content/img/avatar-3.jpg" class="avatar" height="50" width="50" alt="">
-              </div>
-
-              <div class="comment-text">
-                <span class="reply">
-                  <a class="comment-reply-link" href="#">Reply</a>
-                </span>
-                <h6 class="author">Joanna</h6>
-                <span class="date">Posted on November 24, 2016</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloremque eveniet illo, in iste
-                  magnam modi provident qui quo recusandae reprehenderit sapiente? Ab aliquam architecto beatae
-                  blanditiis delectus dignissimos dolor ea enim exercitationem expedita facilis, fugit inventore ipsam,
-                  ipsum nam nihil obcaecati officia quidem quis reprehenderit sint suscipit, veritatis voluptatem!</p>
-              </div>
+              <!-- <div class="author-img">
+                <img v-bind:src="user.image_url" class="avatar" height="50" width="50" alt="">
+              </div> -->
             </li>
           </ul><!-- .comments -->
 
           <div class="comment-respond">
-            <h4 class="comment-reply-title title">Leave a Reply</h4>
+            <h4 class="comment-reply-title title">Leave a Comment</h4>
 
             <form class="comment-form">
               <p class="comment-notes">
@@ -185,16 +148,12 @@
                 <label class="control-label" for="comment">Comment <span class="required red-text">*</span></label>
                 <textarea id="comment" class="form-control" name="comment" cols="30" rows="4"></textarea>
               </div>
-              <div class="form-group left-field">
-                <label class="control-label" for="author">Name <span class="required red-text">*</span></label>
+              <!-- <div class="form-group left-field">
+                <label class="control-label" for="author">Username <span class="required red-text">*</span></label>
                 <input id="author" type="text" name="author" class="form-control">
-              </div>
-              <div class="form-group right-field">
-                <label class="control-label" for="email">Email <span class="required red-text">*</span></label>
-                <input id="email" type="email" name="email" class="form-control">
-              </div>
+              </div> -->
               <p class="form-group btn-form-group">
-                <button class="btn btn-default submit">Post Comment</button>
+                <button class="btn btn-default submit"><router-link v-bind:to="'/comments'">Post Comment</router-link></button>
               </p>
             </form>
           </div><!-- .comment-respond -->
@@ -211,6 +170,11 @@ import axios from "axios";
 export default {
   data: function() {
     return {
+      newSuggestionContent: "",
+      newSuggestionRecipeId: "",
+      newSuggestionVoteCount: "",
+      newCommentContent: "",
+      newCommentUsername: "",
       recipe: {},
       currentSuggestion: {},
       currentComment: {},
@@ -227,7 +191,8 @@ export default {
     axios.get("/api/comments").then(response => {
       this.comments = response.data;
       console.log(this.comments);
-    });axios.get("/api/suggestions").then(response => {
+    });
+    axios.get("/api/suggestions").then(response => {
       this.suggestions = response.data;
       console.log(this.suggestions);
     });
@@ -239,9 +204,17 @@ export default {
         content: this.newSuggestionContent,
         recipe_id: this.newSuggestionRecipeId,
         user_id: this.current_user.id,
-        vote_count: this.newSuggestionVoteCount
+        vote_count: this.newSuggestionVoteCount,
+        comment: this.newCommentContent,
+        username: this.current_user.id
+        
       };
       axios.post("/api/suggestions", params).then(response => {
+        this.$router.push("/");
+      }).catch(error => {
+        this.errors = error.response.data.errors;
+      });
+      axios.post("/api/comments", params).then(response => {
         this.$router.push("/");
       }).catch(error => {
         this.errors = error.response.data.errors;
