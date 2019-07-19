@@ -95,6 +95,10 @@
 
             <ul class="tags-list">
             </ul>
+
+            <button class="btn btn-warning">
+              <router-link v-bind:to="'/recipes/' + recipe.id + '/edit'">Edit</router-link>
+            </button>
           </div><!-- .post-content -->
 
           <div class="row post-footer">
@@ -112,6 +116,9 @@
           </div>
         </article><!-- .post -->
 
+
+
+
         <div class="post-comments">
           <h4 class="title">Comments</h4>
 
@@ -125,7 +132,7 @@
                 <span class="reply">
                   <a class="comment-reply-link" href="#">Reply</a>
                 </span>
-                <h6 class="author">{{ comment.user_id}}</h6>
+                <h6 class="author">{{ comment.username}}</h6>
                 <span class="date">Posted on November 25, 2016</span>
                 <p>{{ comment.content }}</p>
               </div>
@@ -137,27 +144,42 @@
             </li>
           </ul><!-- .comments -->
 
-          <div class="comment-respond">
-            <h4 class="comment-reply-title title">Leave a Comment</h4>
-
-            <form v-on:submit.prevent="submit()" class="comment-form">
-              <p class="comment-notes">
-                <span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span>
-              </p>
-              <div class="form-group">
-                <label class="control-label" for="comment">Comment <span class="required red-text">*</span></label>
-                <textarea id="comment" class="form-control" name="comment" cols="30" rows="4"></textarea>
-              </div>
-              <!-- <div class="form-group left-field">
-                <label class="control-label" for="author">Username <span class="required red-text">*</span></label>
-                <input id="author" type="text" name="author" class="form-control">
-              </div> -->
-              <p class="form-group btn-form-group">
-                <button class="btn btn-default submit">Post Comment</button>
-              </p>
-            </form>
-          </div><!-- .comment-respond -->
         </div><!-- .post-comments -->
+        <button class="btn btn-warning">
+          <router-link v-bind:to="'/comments/new'">Add Comment</router-link>
+        </button>
+
+        <!-- <div class="post-comments">
+
+
+          <h4 class="title">Suggestions</h4>
+
+          <ul class="suggestions">
+            <li v-for="suggestion in recipe.suggestions" class="suggestion even">
+              <div class="author-img">
+                <img src="content/img/avatar-1.jpg" class="avatar" height="50" width="50" alt="">
+              </div>
+
+              <div class="suggestion-text">
+                <span class="reply">
+                  <a class="suggestion-reply-link" href="#">Reply</a>
+                </span>
+                <h6 class="author">{{ suggestion.username }}</h6>
+                <span class="date">Posted on November 25, 2016</span>
+                <p>{{ suggestion.content }}</p>
+              </div>
+            </li>
+            <li class="suggestion byuser suggestion-author-solopine bypostauthor even thread-odd thread-alt depth-1" id="suggestion-3"> -->
+              <!-- <div class="author-img">
+                <img v-bind:src="user.image_url" class="avatar" height="50" width="50" alt="">
+              </div> -->
+            <!-- </li> -->
+         <!--  </ul> --><!-- .comments -->
+
+        <!-- </div> --><!-- .post-comments -->
+        <!-- <button class="btn btn-warning">
+          <router-link v-bind:to="'/suggestions'">Add Suggestion</router-link> -->
+        </button>
       </div>
     </main><!-- #main -->
 

@@ -44,6 +44,9 @@
           </div><!-- .page-content -->
         </article><!-- .page -->
       </div>
+      <button class="btn btn-warning">
+        <router-link v-bind:to="'/users/' + user.id + '/edit'">Edit</router-link>
+      </button>
     </main><!-- #main -->
   </div><!-- .page-box -->
 </template>
