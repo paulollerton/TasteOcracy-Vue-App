@@ -1,5 +1,5 @@
 <template>
-  <div class="users-edit">
+  <!-- <div class="users-edit">
     
     <h1 class="text-center">Edit User</h1> 
 
@@ -42,7 +42,53 @@
       <button class="btn btn-danger" v-on:click="destroyUser()">Destroy</button> 
     </div>
 
-  </div>
+  </div> -->
+
+  <main id="main">
+    <header class="page-header">
+      <h1><span class="accent-color">Edit</span> Profile</h1>
+    </header>
+
+    <div class="container">
+
+      <div class="post-comments">
+
+        <div class="comment-respond">
+
+          <form v-on:submit.prevent="submit()" class="comment-form">
+
+            <div class="form-group left-field">
+              <label class="control-label" for="author">Username <span class="required red-text">*</span></label>
+              <input id="author" type="text" name="author" class="form-control" placeholder="Tea" v-model="user.username">
+            </div>
+            <div class="form-group left-field">
+              <label class="control-label" for="author">Image URL <span class="required red-text">*</span></label>
+              <input id="author" type="text" name="author" class="form-control" placeholder="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/03/14/istock-502426854.jpg?w968h681" v-model="user.image_url">
+            </div>
+            <div class="form-group left-field">
+              <label class="control-label" for="author">Bio <span class="required red-text">*</span></label>
+              <input id="author" type="text" name="author" class="form-control" placeholder="Drinks" v-model="user.bio">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="comment">Email <span class="required red-text">*</span></label>
+              <textarea id="comment" class="form-control" name="comment" cols="30" rows="4" placeholder="I love tea, it helps me to calm down after my evil plans have been thwarted by a young boy." v-model="user.email"></textarea>
+            </div>
+            <div class="form-group right-field">
+              <label class="control-label" for="author">Password <span class="required red-text">*</span></label>
+              <input id="author" type="author" name="author" class="form-control" placeholder="********" v-model="user.password">
+            </div>
+            <div class="form-group right-field">
+              <label class="control-label" for="author">Password Confirmation <span class="required red-text">*</span></label>
+              <input id="author" type="author" name="author" class="form-control" placeholder="********" v-model="user.password_confirmation">
+            </div>
+            <p class="form-group btn-form-group">
+              <button class="btn btn-default submit">Submit</button>
+            </p>
+          </form>
+        </div><!-- .comment-respond -->
+      </div><!-- .post-comments -->
+    </div>
+  </main><!-- #main -->
 </template>
 
 <script>
