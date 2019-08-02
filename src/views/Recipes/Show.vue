@@ -76,7 +76,7 @@
           </blockquote>
 
           <div class="post-header">
-            <div class="created-by">Created By: {{ recipe.user_id }}</div>
+            <div class="created-by">Created By: {{ recipe.username }}</div>
           </div>
 
           <div class="post-content">
@@ -180,6 +180,7 @@ export default {
       currentComment: {},
       comments: [],
       suggestions: [],
+      votes: "",
       errors: []
     };
   },
@@ -195,6 +196,10 @@ export default {
     axios.get("/api/suggestions").then(response => {
       this.suggestions = response.data;
       console.log(this.suggestions);
+    });
+    axios.get("/api/votes").then(response => {
+      this.votes = response.data;
+      console.log(this.votes);
     });
   },
   methods: {
